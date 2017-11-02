@@ -277,3 +277,16 @@ $delay-time:3; //in seconds
 .intro-text {
   width: 50%;
 }
+/////////////--------footer-----///////////
+footer {
+  text-align: center;
+  padding: 20px;
+  overflow: auto;
+  background-color: #002040;
+  color: white;
+}
+.logo-footer {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
