@@ -260,3 +260,20 @@ $delay-time:3; //in seconds
         opacity: 0;
     }
 }
+// ////////-------intro-part-----/////
+.intro {
+  h1 {
+    color: $theme-color-main;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  p {
+    font-weight: 300;
+  }
+  padding: 20px 50px;
+}
+.intro-text {
+  width: 50%;
+}
