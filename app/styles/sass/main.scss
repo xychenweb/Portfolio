@@ -1,3 +1,192 @@
-div {
-	background-color: purple;
+@import 'reset';
+$theme-color-main: #002040;
+$theme-color-main-lighter:#003f7b;
+$theme-color-main-light:#00305e;
+$theme-color-main-dark:#000d1a;
+$theme-color-main-darker:#000;
+$theme-contrast-color: #FF0085;
+$theme-contrast-color-lighter:#FE61B4;
+$theme-contrast-color-light:#FF319D;
+$theme-contrast-color-darker:#DD0075;
+$text-light-gray: #dcdbdb;
+$navigation-bar-height:70px;
+
+%clearfix {}
+
+body {
+    font-family: sans-serif;
 }
+
+.topnav {
+    height: $navigation-bar-height;
+    background-color: $theme-color-main;
+    padding-left: 30px;
+    padding-right: 30px;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+.logo {
+    height: $navigation-bar-height;
+    width: $navigation-bar-height;
+    display: inline-block;
+    float: left;
+    padding: 7px;
+    box-sizing: border-box;
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+.topnav ul {
+    overflow: auto;
+    height: 100%;
+    list-style: none;
+    text-align: center;
+    li {
+        float: left;
+        padding-top: ($navigation-bar-height - 46)/2;
+    }
+}
+
+.topnav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #dcdbdb;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.topnav ul li a,
+.topnav ul li a:after,
+.topnav ul li a:before {
+    transition: all .5s;
+}
+
+.topnav ul li a:hover {
+    color: $theme-color-main-dark;
+}
+
+.topnav.shift ul li a {
+    position: relative;
+    z-index: 1;
+}
+
+.topnav.shift ul li a:hover {
+    color: $theme-color-main-dark;
+}
+.topnav.shift ul li a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: #FF319D;
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+}
+
+.topnav.shift ul li a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+.main-wrapper {
+    height: 500px;
+}
+
+// .topnav li {
+//  display: inline-block;
+//  float: left;
+//  display: block;
+//  color: #fff;
+//  text-align: center;
+//  padding-top: 30px;
+//  padding-left: 16px;
+//  padding-right: 16px;
+//  text-decoration: none;
+//  font-size: 22px;
+// }
+///////////---------------------hero-backround----------------/////////
+.main-wrapper {
+    margin: 0;
+    padding: 5%;
+    font-family: "arial", heletica, sans-serif;
+    font-size: 12px;
+    background: #002040 url('../../images/static-background-3.jpg') repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
+}
+
+@-webkit-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@-moz-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@-ms-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@-o-keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 500px 0;
+    }
+}
+
+@keyframes animate {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 500px 0;
+    }
+}
+
+////////////////////////////
+.text-box {
+    height: 90%;
+    border-radius: 25px;
+    border: 1px solid #FF0085;
+}
+
+h1 {
+    color: white;
+}
+
