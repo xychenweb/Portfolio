@@ -285,8 +285,28 @@ footer {
   background-color: #002040;
   color: white;
 }
-.logo-footer {
+// .logo-footer {
+//   display: inline-block;
+//   height: 30px;
+//   width: 30px;
+// }
+.phone,.email {
+  padding: 10px;
+}
+.phone-icon,.email-icon,.logo-footer {
+  width: 24px;
+  height: 24px;
   display: inline-block;
-  height: 30px;
-  width: 30px;
+  vertical-align: middle;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.phone-number,.email-icon, .email,.logo-footer, .copyright-text {
+  vertical-align: middle;
+}
+.copyright {
+  padding: 10px;
+  font-size: 70%;
 }
