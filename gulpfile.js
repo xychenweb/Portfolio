@@ -7,7 +7,6 @@ var uglify = require('gulp-uglify'),
 
 
 var jsfiles = '';
-// TODO 6.3a - include browserSync
 gulp.task('styles', function() {
     gulp.src('app/styles/sass/**/*.scss')
         .pipe(sass().on('error', sass.logError))
