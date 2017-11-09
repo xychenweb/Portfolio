@@ -15,11 +15,17 @@ $navigation-bar-height:70px;
 
 body {
     font-family: sans-serif;
+    background: #002040 url('../../images/static-background-3.jpg') repeat 0 0;
+    -webkit-animation: 10s linear 0s normal none infinite animate;
+    -moz-animation: 10s linear 0s normal none infinite animate;
+    -ms-animation: 10s linear 0s normal none infinite animate;
+    -o-animation: 10s linear 0s normal none infinite animate;
+    animation: 10s linear 0s normal none infinite animate;
 }
 
 .topnav {
     height: $navigation-bar-height;
-    background-color: $theme-color-main;
+    background-color: transparent;
     padding-left: 30px;
     padding-right: 30px;
     a {
@@ -127,12 +133,7 @@ body {
     padding: 5%;
     font-family: "arial", heletica, sans-serif;
     font-size: 12px;
-    background: #002040 url('../../images/static-background-3.jpg') repeat 0 0;
-    -webkit-animation: 10s linear 0s normal none infinite animate;
-    -moz-animation: 10s linear 0s normal none infinite animate;
-    -ms-animation: 10s linear 0s normal none infinite animate;
-    -o-animation: 10s linear 0s normal none infinite animate;
-    animation: 10s linear 0s normal none infinite animate;
+
 }
 
 @-webkit-keyframes animate {
@@ -262,6 +263,7 @@ $delay-time:3; //in seconds
 }
 // ////////-------intro-part-----/////
 .intro {
+  background-color: white;
   h1 {
     color: $theme-color-main;
     font-size: 50px;
