@@ -276,8 +276,15 @@ $delay-time:3; //in seconds
   }
   padding: 20px 50px;
 }
-.intro-text {
+.intro-text,.intro-pic {
   width: 50%;
+  display: inline-block;
+}
+.intro-text {
+  float: left;
+}
+.intro-pic img {
+  width: 100%;
 }
 /////////////--------footer-----///////////
 footer {
