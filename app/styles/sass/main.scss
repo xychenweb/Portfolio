@@ -181,11 +181,23 @@ body {
 
 ////////////////////////////
 .text-box {
+    display: table;
+    padding-top: auto;
+    padding-bottom: auto;
+    vertical-align: middle;
+    padding-left: 25px;
+    padding-right: 25px;
     height: 90%;
     border-radius: 25px;
     border: 1px solid #FF0085;
+    color: white;
+    font-size: 55px;
 }
 
+.hero-text-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+}
 h1 {
     color: white;
 }
@@ -212,10 +224,13 @@ $delay-time:3; //in seconds
     width: 100%;
     color: white; //cosutomized
     text-align: center;
+    :first-child {
+        opacity: 1;
+    }
 }
 
 .rw-words span {
-    animation: rotateWordsFirst $language-count * $delay-time * 1s linear infinite 0s;
+    animation: rotateWordsFirst $language-count * $delay-time * 1s linear 1 0s;
     font-size: 60px;
 }
 
@@ -224,18 +239,6 @@ $delay-time:3; //in seconds
     animation-delay: $i * $delay-time * 1s;
   }
 }
-
-// .rw-words span:nth-child(2) {
-//     animation-delay: 3s;
-// }
-
-// .rw-words span:nth-child(3) {
-//     animation-delay: 6s;
-// }
-
-// .rw-words span:nth-child(4) {
-//     animation-delay: 9s;
-// }
 
 @keyframes rotateWordsFirst {
     0% {
