@@ -11,6 +11,8 @@ $theme-contrast-color-darker:#DD0075;
 $text-light-gray: #dcdbdb;
 $navigation-bar-height:70px;
 
+$permanent-marker:'Permanent Marker', cursive;
+
 body {
     font-family: sans-serif;
     background: #002040 url('../../images/static-background-3.jpg') repeat 0 0;
@@ -309,6 +311,9 @@ footer {
     width: 100%;
     height: 100%;
   }
+}
+.phone-number, .location {
+   font-family: $permanent-marker;
 }
 .phone-number,.email-icon, .email,.logo-footer, .copyright-text {
   vertical-align: middle;
